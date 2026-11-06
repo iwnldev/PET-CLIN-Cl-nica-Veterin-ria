@@ -58,7 +58,7 @@
   <style>
     /* Estilos personalizados complementares */
     .glass-nav {
-      background: rgba(255, 255, 255, 0.92);
+      background: rgba(255, 255, 255, 0.94);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
     }
@@ -139,17 +139,28 @@
           <a href="#contato" class="text-sm font-semibold text-slate-700 hover:text-brand-600 transition-colors">Contato</a>
         </nav>
 
-        <!-- CTA Header -->
+        <!-- CTA Header com Botão de Emergência 24h e Agendar Consulta -->
         <div class="hidden lg:flex items-center gap-3">
-          <a href="https://wa.me/5575992996010?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20atendimento%20na%20PET%20CLIN." target="_blank" rel="noopener noreferrer" 
+          <!-- Botão de Emergência 24h conforme mockup -->
+          <a href="tel:75992996010" 
+             class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full border-2 border-red-500 text-red-600 hover:bg-red-500 hover:text-white text-xs font-extrabold uppercase tracking-wider transition-all duration-300 shadow-sm">
+            <i class="fa-solid fa-cross text-sm"></i>
+            <span>Emergência 24h</span>
+          </a>
+
+          <!-- Botão Agendar Consulta -->
+          <a href="https://wa.me/5575992996010?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20PET%20CLIN." target="_blank" rel="noopener noreferrer" 
              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand-700 hover:bg-brand-800 text-white text-sm font-semibold shadow-soft hover:shadow-glow transition-all duration-300">
             <i class="fa-brands fa-whatsapp text-lg text-emerald-300"></i>
-            <span>(75) 99299-6010</span>
+            <span>Agendar Consulta</span>
           </a>
         </div>
 
         <!-- Botão Mobile Menu -->
-        <div class="flex md:hidden items-center">
+        <div class="flex md:hidden items-center gap-2">
+          <a href="tel:75992996010" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-red-500 text-red-600 text-xs font-bold uppercase">
+            <i class="fa-solid fa-cross text-xs"></i> 24h
+          </a>
           <button id="mobile-menu-btn" type="button" aria-label="Abrir menu" class="p-2 rounded-lg text-slate-600 hover:text-brand-700 hover:bg-slate-100 focus:outline-none">
             <i id="menu-icon" class="fa-solid fa-bars text-2xl"></i>
           </button>
@@ -167,18 +178,18 @@
       <a href="#contato" class="mobile-link block py-2 text-base font-medium text-slate-700 hover:text-brand-600">Localização e Contato</a>
       
       <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
+        <a href="tel:75992996010" class="w-full text-center py-2.5 bg-red-600 text-white font-bold rounded-xl flex items-center justify-center gap-2 shadow">
+          <i class="fa-solid fa-cross"></i> Ligar Emergência 24h
+        </a>
         <a href="https://wa.me/5575992996010?text=Ol%C3%A1!%20Gostaria%20de%20atendimento%20para%20o%20meu%20pet." target="_blank" rel="noopener noreferrer"
            class="w-full text-center py-3 bg-brand-700 text-white font-semibold rounded-xl flex items-center justify-center gap-2 shadow">
           <i class="fa-brands fa-whatsapp text-lg"></i> Falar no WhatsApp
-        </a>
-        <a href="tel:7530306010" class="w-full text-center py-2.5 border border-brand-700 text-brand-800 font-semibold rounded-xl flex items-center justify-center gap-2">
-          <i class="fa-solid fa-phone"></i> Ligar: (75) 3030-6010
         </a>
       </div>
     </div>
   </header>
 
-  <!-- 3. Hero Section de Alto Impacto -->
+  <!-- 3. Hero Section com Badges Flutuantes -->
   <section id="inicio" class="hero-gradient pt-8 pb-16 lg:pt-16 lg:pb-24 overflow-hidden relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -192,23 +203,23 @@
           </div>
 
           <h1 class="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-slate-900 tracking-tight leading-[1.15]">
-            Seu pet merece <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-700 to-emerald-600">cuidado de verdade</span>. Nós estamos aqui por ele!
+            Cuidado premium para <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-700 to-emerald-600">quem você mais ama</span>
           </h1>
 
           <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-            Na <strong class="text-slate-800 font-semibold">PET CLIN</strong>, seu melhor amigo encontra acolhimento, atendimento veterinário de excelência e uma estrutura completa para todas as fases da vida, a qualquer hora do dia ou da noite.
+            Atendimento especializado, infraestrutura de ponta e carinho 24 horas por dia. Na <strong class="text-slate-800 font-semibold">PET CLIN</strong>, seu melhor amigo encontra acolhimento e excelência a qualquer momento.
           </p>
 
           <!-- CTAs Primários -->
           <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-2">
-            <a href="https://wa.me/5575992996010?text=Ol%C3%A1!%20Preciso%20de%20atendimento%20veterin%C3%A1rio%20para%20o%20meu%20pet." target="_blank" rel="noopener noreferrer"
+            <a href="https://wa.me/5575992996010?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20agendamento%20online%20na%20PET%20CLIN." target="_blank" rel="noopener noreferrer"
                class="w-full sm:w-auto px-7 py-3.5 bg-brand-800 hover:bg-brand-900 text-white font-semibold rounded-2xl shadow-lg shadow-brand-900/20 hover:shadow-glow transition-all duration-300 flex items-center justify-center gap-3">
-              <i class="fa-brands fa-whatsapp text-xl text-emerald-400"></i>
-              <span>Fale com nossa equipe</span>
+              <i class="fa-solid fa-calendar-check text-emerald-400"></i>
+              <span>Agendar Online</span>
             </a>
             
             <a href="#servicos" class="w-full sm:w-auto px-7 py-3.5 bg-white hover:bg-slate-50 text-slate-800 font-semibold rounded-2xl border border-slate-200 shadow-sm transition-all duration-300 flex items-center justify-center gap-2">
-              <span>Conheça nossos serviços</span>
+              <span>Ver Serviços</span>
               <i class="fa-solid fa-arrow-down text-xs text-brand-600"></i>
             </a>
           </div>
@@ -231,7 +242,7 @@
 
         </div>
 
-        <!-- Coluna Visual / Composição Fotográfica Profissional -->
+        <!-- Coluna Visual com os Selos de Avaliação e Especialistas -->
         <div class="lg:col-span-5 relative">
           <div class="relative mx-auto max-w-md lg:max-w-none">
             
@@ -251,25 +262,20 @@
               </div>
             </div>
 
-            <!-- Card Flutuante 1: Internamento Monitorado -->
-            <div class="absolute -top-4 -left-6 z-20 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-card border border-slate-100 flex items-center gap-3 hidden sm:flex">
-              <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg">
-                <i class="fa-solid fa-heart-pulse"></i>
-              </div>
-              <div>
-                <p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Monitoramento</p>
-                <p class="text-sm font-bold text-slate-800">Internamento 24h</p>
-              </div>
+            <!-- Card Flutuante 1: Selo de Avaliação Conforme Mockup -->
+            <div class="absolute -top-4 -left-4 sm:-left-6 z-20 bg-white/95 backdrop-blur-md px-4 py-3 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-2.5">
+              <i class="fa-solid fa-star text-amber-500 text-base"></i>
+              <span class="text-xs sm:text-sm font-extrabold text-slate-800">4.9 (2k+ avaliações)</span>
             </div>
 
-            <!-- Card Flutuante 2: Serviço Leva e Traz -->
-            <div class="absolute -bottom-6 -right-6 z-20 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-card border border-slate-100 flex items-center gap-3 hidden sm:flex">
-              <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center text-lg">
-                <i class="fa-solid fa-van-shuttle"></i>
+            <!-- Card Flutuante 2: Selo de Especialistas Conforme Mockup -->
+            <div class="absolute -bottom-5 -right-4 sm:-right-6 z-20 bg-white/95 backdrop-blur-md px-4 py-3 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-brand-100 text-brand-800 flex items-center justify-center text-sm font-bold">
+                <i class="fa-solid fa-user-doctor"></i>
               </div>
               <div>
-                <p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Comodidade</p>
-                <p class="text-sm font-bold text-slate-800">Buscamos seu Pet</p>
+                <p class="text-xs sm:text-sm font-extrabold text-slate-900">+15 Especialistas</p>
+                <p class="text-[10px] text-slate-500 font-medium">Plantão & Internamento 24h</p>
               </div>
             </div>
 
@@ -375,7 +381,7 @@
     </div>
   </section>
 
-  <!-- 5. Seção de Serviços Detalhada -->
+  <!-- 5. Seção de Serviços Detalhada com Nova Disposição Visual dos Cards -->
   <section id="servicos" class="py-20 bg-slate-50 border-t border-b border-slate-200/70">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -409,23 +415,23 @@
         </div>
       </div>
 
-      <!-- Grid de Serviços -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Grid de Serviços com a Nova Disposição dos Cards Arredondados -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         
-        <!-- Card 1: Clínica Veterinária -->
-        <div class="service-card group bg-white rounded-3xl p-8 shadow-card border border-slate-100 hover:shadow-soft hover:border-brand-300 transition-all duration-300 flex flex-col justify-between" data-category="clinica">
+        <!-- Card 1: Consultas Veterinárias -->
+        <div class="service-card group bg-white rounded-3xl p-7 shadow-card border border-slate-100 hover:border-brand-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between" data-category="clinica">
           <div>
-            <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-700 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-700 group-hover:text-white transition-colors duration-300">
-              <i class="fa-solid fa-user-doctor"></i>
+            <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-700 flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-700 group-hover:text-white transition-colors duration-300">
+              <i class="fa-solid fa-stethoscope"></i>
             </div>
             <div class="flex items-center gap-2 mb-2">
               <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Saúde & Diagnóstico</span>
             </div>
-            <h3 class="font-display font-bold text-2xl text-slate-900 mb-3">Consultas Veterinárias</h3>
-            <p class="text-slate-600 text-sm leading-relaxed mb-6">
-              Atendimento clínico geral, avaliação clínica minuciosa, controle de vacinação, orientações nutricionais e acompanhamento de rotina para cães e gatos em qualquer fase da vida.
+            <h3 class="font-display font-bold text-xl text-slate-900 mb-2">Consultas Veterinárias</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-5">
+              Atendimento clínico geral, avaliação clínica minuciosa, controle de vacinação, orientações nutricionais e acompanhamento de rotina para cães e gatos.
             </p>
-            <ul class="space-y-2.5 text-xs text-slate-600 border-t border-slate-100 pt-4 mb-6">
+            <ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-4 mb-6">
               <li class="flex items-center gap-2">
                 <i class="fa-solid fa-check text-emerald-500"></i> Avaliação minuciosa e humanizada
               </li>
@@ -444,20 +450,52 @@
           </a>
         </div>
 
-        <!-- Card 2: Internamento Monitorado 24h -->
-        <div class="service-card group bg-white rounded-3xl p-8 shadow-card border border-slate-100 hover:shadow-soft hover:border-brand-300 transition-all duration-300 flex flex-col justify-between" data-category="clinica">
+        <!-- Card 2: Cirurgias Veterinárias -->
+        <div class="service-card group bg-white rounded-3xl p-7 shadow-card border border-slate-100 hover:border-brand-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between" data-category="clinica">
           <div>
-            <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-700 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-700 group-hover:text-white transition-colors duration-300">
+            <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-700 flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-700 group-hover:text-white transition-colors duration-300">
+              <i class="fa-solid fa-syringe"></i>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Centro Cirúrgico</span>
+            </div>
+            <h3 class="font-display font-bold text-xl text-slate-900 mb-2">Cirurgias Veterinárias</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-5">
+              Procedimentos cirúrgicos eletivos e emergenciais conduzidos com suporte anestésico seguro, centro cirúrgico equipado e foco total no conforto do paciente.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-4 mb-6">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-500"></i> Sala cirúrgica devidamente equipada
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-500"></i> Cuidados pré e pós-operatórios
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-500"></i> Monitoramento anestésico dedicado
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/5575992996010?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20cirurgias%20e%20castra%C3%A7%C3%A3o%20na%20PET%20CLIN." target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center justify-between w-full py-3 px-4 rounded-xl bg-slate-50 hover:bg-brand-50 text-brand-900 text-sm font-semibold border border-slate-200 transition-colors">
+            <span>Consultar Cirurgias</span>
+            <i class="fa-solid fa-arrow-right text-brand-600"></i>
+          </a>
+        </div>
+
+        <!-- Card 3: Internamento Monitorado 24h -->
+        <div class="service-card group bg-white rounded-3xl p-7 shadow-card border border-slate-100 hover:border-brand-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between" data-category="clinica">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-700 flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-700 group-hover:text-white transition-colors duration-300">
               <i class="fa-solid fa-bed-pulse"></i>
             </div>
             <div class="flex items-center gap-2 mb-2">
               <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Cuidado Intensivo</span>
             </div>
-            <h3 class="font-display font-bold text-2xl text-slate-900 mb-3">Internamento Monitorado</h3>
-            <p class="text-slate-600 text-sm leading-relaxed mb-6">
-              Estrutura equipada para acompanhamento contínuo de animais em recuperação, pós-operatório ou quadro clínico que demande medicação assistida e vigilância 24 horas.
+            <h3 class="font-display font-bold text-xl text-slate-900 mb-2">Internamento Monitorado</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-5">
+              Estrutura equipada para acompanhamento contínuo de animais em recuperação, pós-operatório ou que demandem vigilância médica constante 24 horas.
             </p>
-            <ul class="space-y-2.5 text-xs text-slate-600 border-t border-slate-100 pt-4 mb-6">
+            <ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-4 mb-6">
               <li class="flex items-center gap-2">
                 <i class="fa-solid fa-check text-emerald-500"></i> Monitoramento contínuo
               </li>
@@ -476,95 +514,60 @@
           </a>
         </div>
 
-        <!-- Card 3: Cirurgias Veterinárias -->
-        <div class="service-card group bg-white rounded-3xl p-8 shadow-card border border-slate-100 hover:shadow-soft hover:border-brand-300 transition-all duration-300 flex flex-col justify-between" data-category="clinica">
-          <div>
-            <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-700 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-700 group-hover:text-white transition-colors duration-300">
-              <i class="fa-solid fa-kit-medical"></i>
-            </div>
-            <div class="flex items-center gap-2 mb-2">
-              <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Centro Cirúrgico</span>
-            </div>
-            <h3 class="font-display font-bold text-2xl text-slate-900 mb-3">Cirurgias Veterinárias</h3>
-            <p class="text-slate-600 text-sm leading-relaxed mb-6">
-              Procedimentos cirúrgicos eletivos (como castração preventiva) e emergenciais conduzidos com anestesia segura, esterilização hospitalar e foco total no conforto do paciente.
-            </p>
-            <ul class="space-y-2.5 text-xs text-slate-600 border-t border-slate-100 pt-4 mb-6">
-              <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-emerald-500"></i> Sala cirúrgica devidamente equipada
-              </li>
-              <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-emerald-500"></i> Cuidados pré e pós-operatórios
-              </li>
-              <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-emerald-500"></i> Suporte anestésico dedicado
-              </li>
-            </ul>
-          </div>
-          <a href="https://wa.me/5575992996010?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20cirurgias%20e%20castra%C3%A7%C3%A3o%20na%20PET%20CLIN." target="_blank" rel="noopener noreferrer"
-             class="inline-flex items-center justify-between w-full py-3 px-4 rounded-xl bg-slate-50 hover:bg-brand-50 text-brand-900 text-sm font-semibold border border-slate-200 transition-colors">
-            <span>Consultar Cirurgias</span>
-            <i class="fa-solid fa-arrow-right text-brand-600"></i>
-          </a>
-        </div>
-
         <!-- Card 4: Banho e Tosa Completo -->
-        <div class="service-card group bg-white rounded-3xl p-8 shadow-card border border-slate-100 hover:shadow-soft hover:border-brand-300 transition-all duration-300 flex flex-col justify-between" data-category="banho-tosa">
+        <div class="service-card group bg-white rounded-3xl p-7 shadow-card border border-slate-100 hover:border-brand-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between" data-category="banho-tosa">
           <div>
-            <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-700 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-700 group-hover:text-white transition-colors duration-300">
+            <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-700 flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-700 group-hover:text-white transition-colors duration-300">
               <i class="fa-solid fa-bath"></i>
             </div>
             <div class="flex items-center gap-2 mb-2">
               <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Estética & Higiene</span>
             </div>
-            <h3 class="font-display font-bold text-2xl text-slate-900 mb-3">Banho & Tratamentos</h3>
-            <p class="text-slate-600 text-sm leading-relaxed mb-6">
-              Banhos com produtos dermatológicos selecionados, água em temperatura controlada, hidratação profunda e tratamentos especializados para a pelagem e pele do seu animal.
+            <h3 class="font-display font-bold text-xl text-slate-900 mb-2">Banho & Tratamentos</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-5">
+              Banhos com produtos dermatológicos selecionados, água em temperatura controlada, hidratação profunda, penteados e tratamentos especiais para a pelagem.
             </p>
-            <ul class="space-y-2.5 text-xs text-slate-600 border-t border-slate-100 pt-4 mb-6">
+            <ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-4 mb-6">
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-emerald-500"></i> Banhos especiais e medicamentosos
+                <i class="fa-solid fa-check text-emerald-500"></i> Banhos especiais e hidratantes
               </li>
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-emerald-500"></i> Hidratação e nutrição de pelos
+                <i class="fa-solid fa-check text-emerald-500"></i> Penteados e finalização cuidadosa
               </li>
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-emerald-500"></i> Penteados especiais e finalização cuidadosa
-              </li>
-              <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-emerald-500"></i> Toalhas higienizadas e esterilizadas
+                <i class="fa-solid fa-check text-emerald-500"></i> Toalhas higienizadas individualmente
               </li>
             </ul>
           </div>
-          <a href="https://wa.me/5575992996010?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20banho%20com%20hidrata%C3%A7%C3%A3o%20e%20penteado%20para%20meu%20pet." target="_blank" rel="noopener noreferrer"
+          <a href="https://wa.me/5575992996010?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20banho%20com%20hidrata%C3%A7%C3%A3o%20para%20meu%20pet." target="_blank" rel="noopener noreferrer"
              class="inline-flex items-center justify-between w-full py-3 px-4 rounded-xl bg-slate-50 hover:bg-brand-50 text-brand-900 text-sm font-semibold border border-slate-200 transition-colors">
-            <span>Agendar Banho & Penteado</span>
+            <span>Agendar Banho</span>
             <i class="fa-solid fa-arrow-right text-brand-600"></i>
           </a>
         </div>
 
         <!-- Card 5: Tosas Especializadas -->
-        <div class="service-card group bg-white rounded-3xl p-8 shadow-card border border-slate-100 hover:shadow-soft hover:border-brand-300 transition-all duration-300 flex flex-col justify-between" data-category="banho-tosa">
+        <div class="service-card group bg-white rounded-3xl p-7 shadow-card border border-slate-100 hover:border-brand-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between" data-category="banho-tosa">
           <div>
-            <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-700 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-700 group-hover:text-white transition-colors duration-300">
+            <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-700 flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-700 group-hover:text-white transition-colors duration-300">
               <i class="fa-solid fa-scissors"></i>
             </div>
             <div class="flex items-center gap-2 mb-2">
-              <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Grooming & Estilo</span>
+              <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Grooming Especial</span>
             </div>
-            <h3 class="font-display font-bold text-2xl text-slate-900 mb-3">Tosa Higiênica e Especial</h3>
-            <p class="text-slate-600 text-sm leading-relaxed mb-6">
-              Tosa higiênica, tosa padrão oficial da raça e tosa especial feita 100% na tesoura por profissionais atenciosos, mantendo o animal calmo e confortável.
+            <h3 class="font-display font-bold text-xl text-slate-900 mb-2">Tosa Higiênica e na Tesoura</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-5">
+              Tosa higiênica, tosa padrão oficial de raças e tosa especial feita 100% na tesoura por profissionais atenciosos e cuidadosos.
             </p>
-            <ul class="space-y-2.5 text-xs text-slate-600 border-t border-slate-100 pt-4 mb-6">
+            <ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-4 mb-6">
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-emerald-500"></i> Tosa higiênica preventiva
+                <i class="fa-solid fa-check text-emerald-500"></i> Tosa higiênica de rotina
               </li>
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-emerald-500"></i> Tosa padrão oficial de raças
+                <i class="fa-solid fa-check text-emerald-500"></i> Tosa padrão da raça
               </li>
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-emerald-500"></i> Tosa artesanal com tesoura e penteados
+                <i class="fa-solid fa-check text-emerald-500"></i> Tosa artesanal com tesoura
               </li>
             </ul>
           </div>
@@ -575,20 +578,20 @@
           </a>
         </div>
 
-        <!-- Card 6: Pet Shop & Farmácia Veterinária Completa -->
-        <div class="service-card group bg-white rounded-3xl p-8 shadow-card border border-slate-100 hover:shadow-soft hover:border-brand-300 transition-all duration-300 flex flex-col justify-between" data-category="petshop">
+        <!-- Card 6: Pet Shop & Farmácia Completa -->
+        <div class="service-card group bg-white rounded-3xl p-7 shadow-card border border-slate-100 hover:border-brand-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between" data-category="petshop">
           <div>
-            <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-700 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-700 group-hover:text-white transition-colors duration-300">
+            <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-700 flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-700 group-hover:text-white transition-colors duration-300">
               <i class="fa-solid fa-prescription-bottle-medical"></i>
             </div>
             <div class="flex items-center gap-2 mb-2">
-              <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Produtos & Farmácia</span>
+              <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Medicamentos & Acessórios</span>
             </div>
-            <h3 class="font-display font-bold text-2xl text-slate-900 mb-3">Farmácia Veterinária & Pet Shop</h3>
-            <p class="text-slate-600 text-sm leading-relaxed mb-6">
-              Farmácia veterinária completa no local para atendimento imediato: antibióticos, analgésicos, antiparasitários, rações super premium e acessórios variados.
+            <h3 class="font-display font-bold text-xl text-slate-900 mb-2">Farmácia Veterinária & Pet Shop</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-5">
+              Farmácia veterinária completa no local para atendimento imediato: antibióticos, analgésicos, rações terapêuticas e itens essenciais para o seu pet.
             </p>
-            <ul class="space-y-2.5 text-xs text-slate-600 border-t border-slate-100 pt-4 mb-6">
+            <ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-4 mb-6">
               <li class="flex items-center gap-2">
                 <i class="fa-solid fa-check text-emerald-500"></i> Farmácia completa para compra imediata
               </li>
@@ -596,7 +599,7 @@
                 <i class="fa-solid fa-check text-emerald-500"></i> Medicamentos de urgência e rotina
               </li>
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-emerald-500"></i> Alimentação terapêutica e rações especiais
+                <i class="fa-solid fa-check text-emerald-500"></i> Rações especiais e alimentação terapêutica
               </li>
             </ul>
           </div>
@@ -1255,18 +1258,24 @@
     </div>
   </footer>
 
-  <!-- 12. Botão Flutuante de WhatsApp com Tooltip -->
+  <!-- 12. Botão Flutuante de WhatsApp com Tooltip e Notificação Ativa -->
   <div class="fixed bottom-6 right-6 z-50 flex items-center group">
     <div class="hidden sm:block mr-3 bg-white text-slate-800 text-xs font-bold py-2 px-3.5 rounded-xl shadow-lg border border-slate-100 transform -translate-x-2 group-hover:translate-x-0 transition-all opacity-0 group-hover:opacity-100 pointer-events-none">
       Plantão Veterinário no WhatsApp
     </div>
-    <a href="https://wa.me/5575992996010?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20atendimento%20da%20PET%20CLIN." target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp da PET CLIN"
-       class="w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center text-3xl shadow-xl hover:scale-110 transition-transform duration-300 badge-pulse">
-      <i class="fa-brands fa-whatsapp"></i>
-    </a>
+    <div class="relative">
+      <a href="https://wa.me/5575992996010?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20atendimento%20da%20PET%20CLIN." target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp da PET CLIN"
+         class="w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center text-3xl shadow-xl hover:scale-110 transition-transform duration-300 badge-pulse">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <!-- Badge de Notificação Conforme Mockup -->
+      <span class="absolute -top-1 -right-1 w-5 h-5 bg-red-600 text-white text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-white shadow">
+        1
+      </span>
+    </div>
   </div>
 
-  <!-- JavaScript Puro com Toda a Interatividade Necessária -->
+  <!-- JavaScript com Interatividade -->
   <script>
     // Atualizar ano dinâmico
     document.getElementById('current-year').textContent = new Date().getFullYear();
